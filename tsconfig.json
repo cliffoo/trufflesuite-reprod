@@ -21,7 +21,17 @@
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "paths": {
+      "assert": ["node_modules/assert/"],
+      "crypto": ["node_modules/crypto-browserify"],
+      "os": ["node_modules/os-browserify/browser"],
+      "path": ["node_modules/path-browserify"],
+      "stream": ["node_modules/stream-browserify"],
+      "url": ["node_modules/url/"],
+      "http": ["node_modules/stream-http"],
+      "https": ["node_modules/https-browserify"]
+    }
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
