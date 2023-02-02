@@ -1,1 +1,4 @@
-Attempts to reproduce and hopefully resolve Truffle-related issues.
+Turns out there's nothing to repro: I encountered `TypeError: Cannot read 
+properties of undefined (reading 'doneStepping')` when porting visual debugger
+from clairvoyance to dashboard. I did `<C handler={session.doSomething}/>` when
+it should be `<C handler={() => {session.doSomething()}} />`.
