@@ -1,1 +1,6 @@
-Attempts to reproduce and hopefully resolve Truffle-related issues.
+Smoke test @truffle/codec-components.
+
+`yarn add` the `yarn pack`ed @truffle/codec-components in this repo (check in
+package.json it points to local file path), `yarn dev`, go to localhost:3000
+in a browser with MetaMask installed. MetaMask will ask to connect. If you see
+WETH stuff then we're good. 
